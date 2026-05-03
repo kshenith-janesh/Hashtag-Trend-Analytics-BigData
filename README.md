@@ -78,8 +78,4 @@ CSV dataset simulating real-world social media data.
 ---
 
 ## ✅ Conclusion
-This project shows how Python and big data tools can be used to analyze hashtag trends and generate meaningful insights.
-
----
-
-## 📁 Project Structure
+This project demonstrates how Python and big data concepts can be combined to analyze hashtag trends effectively. It highlights the importance of data analytics and visualization in extracting meaningful insights from large datasets.
