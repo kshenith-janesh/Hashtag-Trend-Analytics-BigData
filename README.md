@@ -15,6 +15,7 @@ Big Data Methodology
 Apply MapReduce logic and distributed storage principles using HDFS.
 Interactive Dashboarding
 Present insights through dynamic and interactive visualizations.
+
 🛠️ Technical Stack
 Languages & Libraries
 Python
@@ -28,6 +29,7 @@ Visualization
 Google Charts
 Matplotlib
 Seaborn
+
 🔄 Project Workflow
 1️⃣ Data Processing (Python)
 Load structured CSV dataset
@@ -60,6 +62,7 @@ External tables mapped to HDFS data
 SQL-like querying for analytics
 Trend analysis and "share of voice" computation
 Export processed data for visualization
+
 📈 Visualization & Dashboard
 Static Visualizations (Python)
 Line charts for trend analysis
