@@ -1,77 +1,94 @@
-# 📊 Hashtag Trend Analytics – Big Data Project
-📌 Overview
+# 📊 Hashtag Trend Analysis Using Python & Dashboard
+📌 Project Overview
 
-This project delivers a comprehensive analysis of social media hashtag trends using a dataset of posts, likes, and retweets. It demonstrates a full data pipeline—from data cleaning and transformation in Python to scalable big data processing using MapReduce concepts and Apache Hive.
-
-The project bridges the gap between traditional data analysis and distributed data engineering workflows, making it a practical blueprint for real-world analytics systems.
+This project analyzes social media hashtag trends using Python and visualizes insights through an interactive dashboard. It focuses on understanding user engagement, trending topics, and content performance using data analytics and big data concepts.
 
 🎯 Objectives
-Trend Analysis
-Track hashtag popularity and posting frequency over time.
-Engagement Modeling
-Measure user interaction by computing total engagement:
-Engagement = Likes + Retweets
-Big Data Methodology
-Apply MapReduce logic and distributed storage principles using HDFS.
-Interactive Dashboarding
-Present insights through dynamic and interactive visualizations.
+Analyze hashtag trends over time
+Measure engagement (Likes + Retweets)
+Identify top-performing hashtags
+Apply big data concepts like MapReduce
+Build an interactive dashboard for visualization
+📂 Dataset
 
-🛠️ Technical Stack
-Languages & Libraries
-Python
-Pandas
-Matplotlib
-Seaborn
-Big Data Tools
-Apache Hive
-Hadoop Distributed File System (HDFS)
-Visualization
-Google Charts
-Matplotlib
-Seaborn
+The dataset is in CSV format and simulates real-world social media data.
 
-🔄 Project Workflow
-
+Dataset Fields:
+Hashtag
+Date
+Posts
+Likes
+Retweets
+🛠️ Technologies Used
+Python (Pandas, Matplotlib, Seaborn)
+Google Charts (Dashboard)
+Hadoop (Conceptual - HDFS, MapReduce)
+Apache Hive (SQL-like analysis)
+⚙️ Project Workflow
 1️⃣ Data Processing (Python)
-Load structured CSV dataset
-Perform Exploratory Data Analysis (EDA)
+Load dataset using pandas
+Convert Date column to datetime
+Sort data by date
 
-Key Steps:
+Create new column:
 
-Date normalization (convert to datetime format)
-Feature engineering (create engagement metric)
-Statistical analysis using:
-Boxplots
-Scatter plots
-Distribution graphs
+Engagement = Likes + Retweets
+Group data by hashtag
+2️⃣ Data Visualization
 
-2️⃣ MapReduce Implementation
-Implements scalable aggregation logic:
+The following visualizations are created:
 
-Map Phase
-Convert records into key-value pairs
-Example: (hashtag, engagement)
-Reduce Phase
-Aggregate data to compute:
+📈 Line Chart → Hashtag trends over time
+📊 Bar Chart → Total posts per hashtag
+🥧 Pie Chart → Hashtag distribution
+📦 Box Plot → Engagement distribution
+🔵 Scatter Plot → Posts vs Likes
+
+👉 Sample outputs are shown in the project report (pages 4–5).
+
+3️⃣ MapReduce Concept (Simulated in Python)
+Map Phase → Splitting data into key-value pairs
+Reduce Phase → Aggregating results
+
+Example:
+
+(#AI, 396)
+(#Python, 421)
+
+👉 Implemented using:
+
+Lists (Map)
+groupby() / defaultdict (Reduce)
+4️⃣ Big Data Implementation (Hive)
+
+Steps:
+
+Upload dataset to HDFS
+Create Hive database & table
+Run queries for:
+Trends over time
 Total posts per hashtag
-Total engagement per hashtag
+Engagement calculation
+Scatter & pie chart data
+📊 Dashboard Features
 
-3️⃣ Scalable Analytics with Apache Hive
-Simulates a production-grade big data environment:
+Built using Google Charts:
 
-External tables mapped to HDFS data
-SQL-like querying for analytics
-Trend analysis and "share of voice" computation
-Export processed data for visualization
+Interactive visualizations
+Multiple chart types:
+Pie Chart
+Column Chart
+Line Chart
+Scatter Plot
+Filters (e.g., posts range)
 
-📈 Visualization & Dashboard
-Static Visualizations (Python)
-Line charts for trend analysis
-Bar charts for hashtag volume
-Pie charts for distribution insights
-Interactive Dashboard
-Built using Google Charts
-Features:
-Real-time filtering
-Engagement comparison
-Dynamic data exploration
+👉 Dashboard preview is shown on page 14 of the report.
+
+📈 Results
+Identified trending hashtags
+Analyzed engagement patterns
+Compared performance across hashtags
+Built an interactive dashboard
+✅ Conclusion
+
+This project demonstrates how Python and big data concepts can be combined to analyze hashtag trends effectively. It highlights the importance of data analytics and visualization in extracting meaningful insights from large datasets.
