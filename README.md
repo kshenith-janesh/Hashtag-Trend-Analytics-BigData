@@ -31,6 +31,7 @@ Matplotlib
 Seaborn
 
 🔄 Project Workflow
+
 1️⃣ Data Processing (Python)
 Load structured CSV dataset
 Perform Exploratory Data Analysis (EDA)
@@ -43,8 +44,8 @@ Statistical analysis using:
 Boxplots
 Scatter plots
 Distribution graphs
-2️⃣ MapReduce Implementation
 
+2️⃣ MapReduce Implementation
 Implements scalable aggregation logic:
 
 Map Phase
@@ -54,8 +55,8 @@ Reduce Phase
 Aggregate data to compute:
 Total posts per hashtag
 Total engagement per hashtag
-3️⃣ Scalable Analytics with Apache Hive
 
+3️⃣ Scalable Analytics with Apache Hive
 Simulates a production-grade big data environment:
 
 External tables mapped to HDFS data
