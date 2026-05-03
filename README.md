@@ -1,4 +1,4 @@
-📊 Hashtag Trend Analytics – Big Data Project
+# 📊 Hashtag Trend Analytics – Big Data Project
 📌 Overview
 
 This project delivers a comprehensive analysis of social media hashtag trends using a dataset of posts, likes, and retweets. It demonstrates a full data pipeline—from data cleaning and transformation in Python to scalable big data processing using MapReduce concepts and Apache Hive.
